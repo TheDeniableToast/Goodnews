@@ -11,3 +11,13 @@ h1 {
 h2 {
     color: magenta;
 }
+
+main {
+    background-color: #acd8d9;
+    padding-bottom: 1080px;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
