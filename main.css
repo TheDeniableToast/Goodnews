@@ -1,23 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.topnav #myLinks {
+    display: none;
+    background-color: darkred;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    
+    color: black;
+}
+
+.active {
+    
+    color: white;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
 
 body {
-    background-color: #D8FDFE;
+    background-color: white;
+}
+
+.black.row {
+    background: #222;
+    padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 85px;
+}
+
+.gray.row {
+    background: gray;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.local.row {
+    background: gray;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 h1 {
-    font-family: "Times New Roman";
-    font-size: 46px;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
 }
 
 h2 {
-    color: magenta;
+    font-weight: 700;
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; top: -20px;
 }
+
+h4 {
+    font-weight: 700;
+    background-color: gray;
+    font-size: 2rem;
+    text-align: center;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; top: -10px;
+}
+
+h5 {
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; top: 100px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h6 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+
+.highlighttext {
+    margin: 0;
+    font-size: 2rem;
+    background-color: #C4C4C4;
+}
+
 
 main {
     background-color: #acd8d9;
     padding-bottom: 1080px;
 }
 
-.container {
-    width: 950px;
+header {
+    background-color: red;
+    
+}
+
+.container img {
+    position: relative; top: 0px;
+} 
+
+
+.container .today {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    display: block;
+}
+
+.container .highlightimg {
+    width: 100%;
+    display: block;
+}
+
+.highlightwrapper {
+    border: 5px solid white;
+    width: 50%;
     margin: 0 auto;
 }
+
+
+h3 {
+    font-weight: 700;
+    background-color: #C4C4C4;
+    text-align: center;
+    font-size: 1.7rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0rem;
+    position: relative; top: -1px;
+}
+
+.articles {
+    border: 15px solid #535353;
+    position: relative; top: -1px;
+}
+
+.local {
+    padding-bottom: 15px;
+}
+
+.abouttitle {
+    background-color: #C4C4C4;
+    width: 100%;
+    position: relative; top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.abouttext {
+    background-color: #ddd;
+    position: relative; top: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+p {
+    font-family: lato;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.homepic {
+    width: 80%;
+    
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: black !important;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+    text-decoration: none;
+  }
+
+  .grouppic {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 100px;
+  }
+
+  .grouparticle {
+      background-color: #C4C4C4;
+      text-align: center;
+  }
+
+  .backtonews {
+    position: relative; top: 40px;
+  }
+
+  @media screen and (max-width: 650px) {
+      .highlightwrapper {
+          width: 100%;
+      }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .black.row h2 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: 870px) {
+      .highlighttext {
+          font-size: 1.6rem;
+      }
+  }
+
+  @media screen and (max-width: 720px) {
+      h6 {
+          font-size: 1.8rem;
+      }
+
+      p {
+          font-size: 1.2rem;
+      }
+
+      h5 {
+          font-size: 1.8rem;
+      }
+    }
+
+    @media screen and (min-width: 720px) {
+    .black.row h2 {
+        width: 64%
+    }
+    }
